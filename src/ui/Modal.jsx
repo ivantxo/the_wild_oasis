@@ -49,8 +49,12 @@ const StyledModal = styled.div`
 //   }
 // `;
 
-function Modal() {
-  return <StyledModal>MODAL</StyledModal>;
+function Modal({ children }) {
+  return (
+    <StyledModal>
+      <div>{children}</div>
+    </StyledModal>
+  );
 }
 
 export default Modal;
