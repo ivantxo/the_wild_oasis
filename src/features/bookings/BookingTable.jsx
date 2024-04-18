@@ -4,6 +4,7 @@ import Menus from "../../ui/Menus";
 import Empty from "../../ui/Empty";
 import { useBookings } from "../cabins/useBookings";
 import Spinner from "../../ui/Spinner";
+import BookingRow from "./BookingRow";
 
 function BookingTable() {
   const { bookings, isLoading } = useBookings();
@@ -24,12 +25,12 @@ function BookingTable() {
           <div></div>
         </Table.Header>
 
-        {/* <Table.Body
+        <Table.Body
           data={bookings}
           render={(booking) => (
             <BookingRow key={booking.id} booking={booking} />
           )}
-        /> */}
+        />
       </Table>
     </Menus>
   );
