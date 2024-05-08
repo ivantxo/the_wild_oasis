@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// import BookingDataBox from "./BookingDataBox";
+import BookingDataBox from "./BookingDataBox";
 import Row from "../../ui/Row";
 import Heading from "../../ui/Heading";
 import Tag from "../../ui/Tag";
@@ -49,7 +49,7 @@ function BookingDetail() {
         <ButtonText onClick={moveBack}>&larr; Back</ButtonText>
       </Row>
 
-      {/* <BookingDataBox booking={booking} /> */}
+      <BookingDataBox booking={booking} />
 
       <ButtonGroup>
         {status === "unconfirmed" && (
